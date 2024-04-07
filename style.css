@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--dark-grey);
+}
+
+ul {
+  list-style: none;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#newsletter .card {
+  background-color: #fff;
+  padding: 2rem 2rem 2rem 3rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  max-width: 900px;
+}
+
+#newsletter .card .card-content h1 {
+  font-size: 50px;
+  color: var(--dark-grey);
+  font-weight: 700;
+}
+
+#newsletter .card .card-content p {
+  color: var(--charcoal-grey);
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+#newsletter .card .card-content ul li {
+  margin: 20px 0;
+  color: var(--charcoal-grey);
+}
+
+#newsletter .card .card-content ul li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#newsletter .card .card-content form label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#newsletter .card .card-content form input {
+  display: block;
+  width: 92%;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 5px 0 20px;
+}
+
+#newsletter .card .card-content form .btn {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--dark-grey);
+  padding: 15px 0;
+  width: 92%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
