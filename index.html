@@ -29,13 +29,23 @@
           </li>
         </ul>
         <form id="form">
-          <label>Email address</label>
+          <label>Email address <span class="validation hidden">Valid email required</span></label>
           <input type="email" name="Email" id="email" placeholder="email@company.com">
-          <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+          <button type="submit" class="subscribe btn">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <img src="./images/illustration-sign-up-desktop.svg" class="main-img" alt="illustration-sign-up">
     </div>
+    <!-- Success Message Start -->
+    <div class="success-msg hidden">
+      <img src="./images/icon-success.svg" alt="icon-success">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <b class="email-name">ash@loremcompany.com.</b>
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismiss btn">Dismiss message</button>
+    </div>
+
+    <!-- Success Message End -->
   </section>
   <!-- JavaScript -->
   <script src="./dist/index.js"></script>

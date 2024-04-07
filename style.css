@@ -22,6 +22,36 @@ ul {
   list-style: none;
 }
 
+h1,
+h2 {
+  color: var(--dark-grey);
+}
+
+p {
+  color: var(--charcoal-grey);
+  line-height: 1.5;
+}
+
+/* Utility Classes */
+.btn {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--dark-grey);
+  padding: 15px 0;
+  width: 92%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, var(--tomato), var(--tomato));
+}
+
+/* Newsletter section */
+
 #newsletter {
   display: flex;
   justify-content: center;
@@ -42,14 +72,11 @@ ul {
 
 #newsletter .card .card-content h1 {
   font-size: 50px;
-  color: var(--dark-grey);
   font-weight: 700;
 }
 
 #newsletter .card .card-content p {
-  color: var(--charcoal-grey);
   margin: 15px 0;
-  line-height: 1.5;
 }
 
 #newsletter .card .card-content ul li {
@@ -64,7 +91,15 @@ ul {
 
 #newsletter .card .card-content form label {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
+  position: relative;
+  display: block;
+}
+
+#newsletter .card .card-content form label span {
+  position: absolute;
+  right: 30px;
+  color: var(--tomato);
 }
 
 #newsletter .card .card-content form input {
@@ -75,16 +110,44 @@ ul {
   border-radius: 8px;
   padding: 15px;
   margin: 5px 0 20px;
+
 }
 
-#newsletter .card .card-content form .btn {
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-  background-color: var(--dark-grey);
-  padding: 15px 0;
-  width: 92%;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+/* Error Message */
+
+#newsletter .card .card-content form input.error {
+  border-color: var(--tomato);
+  background-color: hsla(4, 100%, 67%, 0.156);
+  color: var(--tomato);
+}
+
+#newsletter .card .card-content form input.error::placeholder {
+  color: var(--tomato);
+}
+
+#newsletter .card .card-content form input:focus {
+  outline: 1px solid var(--dark-grey);
+}
+
+/* TS Classes */
+.hidden {
+  display: none !important;
+}
+
+/* Success Message */
+.success-msg {
+  background-color: #fff;
+  padding: 2rem 2rem 2rem 3rem;
+  border-radius: 25px;
+  max-width: 400px;
+}
+
+.success-msg h2 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.success-msg p {
+  font-size: 14px;
+  margin: 20px 0;
 }
