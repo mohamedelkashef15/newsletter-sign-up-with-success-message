@@ -66,7 +66,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 2rem;
+  column-gap: 12rem;
+  margin: 0 2rem;
   max-width: 900px;
 }
 
@@ -150,4 +151,33 @@ p {
 .success-msg p {
   font-size: 14px;
   margin: 20px 0;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  #newsletter .card {
+    flex-direction: column-reverse;
+    column-gap: 0;
+    border-radius: 0;
+    margin: 2rem;
+    padding: 0rem 0 1rem;
+  }
+
+  #newsletter .card .card-content {
+    padding: 4rem 2rem;
+  }
+
+  #newsletter .card .card-content h1 {
+    font-size: 40px;
+  }
+
+  #newsletter .card .main-img {
+    width: 100%;
+  }
+
+  #newsletter .card .card-content form input,
+  .btn {
+    width: 100%;
+  }
 }
